@@ -1,0 +1,121 @@
+*, ::before ::after {
+
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    max-width: 1180px;
+    margin-inline: auto;
+}
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+:root {
+
+    --background-color: rgba(241, 241, 179, 0.466);
+    --btn-color: rgb(0, 204, 255);
+}
+
+body {
+    background: var(--background-color);
+}
+
+button {
+
+    background: var(--btn-color);
+    border: 0;
+    color: white;
+    width: 150px;
+    height: 40px;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+
+h1 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.1rem;
+}
+h2{
+    font-weight: bold;
+    font-size: 1rem;
+}
+span{
+    font-weight: 500;
+}
+button:hover {
+
+
+    background-color: rgb(13, 158, 202);
+    ;
+}
+
+.container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+img {
+    max-width: 100%;
+}
+
+.dish-div {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    /* display: none; */
+    gap: 20px;
+}
+
+.dish-img {
+    max-width: 100%;
+}
+
+.left-dish {
+    width: 30%;
+    padding: 5px;
+}
+
+.right-dish {
+    width: 70%;
+    padding: 5px;
+
+}
+
+.container1  li{
+    margin: 10px 0;
+}
+
+.bootom-vide{
+    display: flex;
+    flex-direction: column;
+}
+.bootom-vide{
+    display: none;
+}
+.dish-show-or-not{
+    display: none;
+}
+
+.sticker{
+    background: rgb(0, 17, 75);
+    color: white;
+
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    padding: 15px;
+    border-radius: 10px 10px 0 0;
+    transform: translateX(-50%);
+}
